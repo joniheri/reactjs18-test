@@ -20,6 +20,13 @@ export default function Home() {
     }
   };
 
+  const resetInput = () => {
+    setInputDateOfBirth("");
+    setInputEmailAddress("");
+    setInputIdentityNumber("");
+    setInputName("");
+  };
+
   const handleSave = async (e) => {
     e.preventDefault();
     try {
@@ -31,6 +38,7 @@ export default function Home() {
       });
       setMsgAlert(response.data.message);
       setTypeAlert(response.data.status);
+      resetInput();
       fetchUser();
     } catch (error) {
       console.log(error);

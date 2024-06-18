@@ -1,0 +1,6 @@
+1. Buat file Dockerfile terlebih dahulu, dan silahkan isi sesuai dengan kebutuhan
+2. Buat file .dockerignor terlebih dahulu, dan silahkan isi sesuai dengan kebutuhan
+3. setelah itu, silahkan ketikkan sintak berikut di termila dalam project iniL:
+  $ docker build -t directoryname/projectname:version .
+  example:
+  $ docker build -t reactjs/reacttest:1.0.0 .
